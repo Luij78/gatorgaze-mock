@@ -9,6 +9,14 @@ Unaffiliated static mockup of the [Gator Gaze Media](https://www.gatorgazemedia.
 - Marketing: Home, About, Services (and each service), Pricing, Projects, Gallery, Blog, Reviews, FAQ, Contact, Book Now, Home Prep, service-area landings, privacy, and terms.
 - Order form (`order/`): Address, Services, Scheduling, Contact, and Confirm. Package prices follow the published square-footage tiers. Placing an order shows a demo confirmation and stays in the browser.
 
+## Publish on GitHub Pages
+
+The workflow in `.github/workflows/pages.yml` deploys this repo on every push to `main`. It cannot turn Pages on by itself.
+
+In the repo, open **Settings → Pages → Build and deployment** and set **Source** to **GitHub Actions**. Then re-run the failed “Deploy GitHub Pages” workflow (or push another commit). The site will be at:
+
+https://luij78.github.io/gatorgaze-mock/
+
 ## Run locally
 
 From the repo root, so asset paths match GitHub Pages:
